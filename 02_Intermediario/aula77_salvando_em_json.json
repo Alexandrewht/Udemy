@@ -1,0 +1,30 @@
+[
+  {
+    "nome": "Alexandre",
+    "sobrenome": "White",
+    "idaide": 30,
+    "ativo": false,
+    "notas": [
+      "A",
+      "A+"
+    ],
+    "telefones": {
+      "residencial": "00 123456789",
+      "celulcar": "01 234567890"
+    }
+  },
+  {
+    "nome": "Val\u00e9ria",
+    "sobrenome": "Cristina",
+    "idaide": 30,
+    "ativo": true,
+    "notas": [
+      "B",
+      "B+"
+    ],
+    "telefones": {
+      "residencial": "99 987654321",
+      "celulcar": "98 0976544321"
+    }
+  }
+]

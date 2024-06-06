@@ -1,0 +1,8 @@
+autopep8==2.0.4
+pep8==1.7.1
+platformdirs==3.11.0
+pycodestyle==2.11.1
+PyMySQL==1.0.1 # versão desatualizada
+tomli==2.0.1
+pytz
+types-pytz
