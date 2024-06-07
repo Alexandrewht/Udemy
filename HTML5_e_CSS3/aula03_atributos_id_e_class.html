@@ -1,0 +1,38 @@
+<!-- Qualquer tag pode receber o id (identificador) e class (classe) 
+
+    Quando usar um id em uma tag, outra tag não pode ter o mesmo id.
+
+    As classes permitem que uma tag tenha mais de uma classe, e cada classe
+    pode ter mais de uma tag.
+    -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03 - Atributos ID e Class</title>
+
+    <!-- aplicando um css basico para mostrar alterações nos atributos id e class -->
+    <style>
+        h1 {
+            background: red;
+        }
+        p {
+            background: blue;
+        }
+        #cabecalho-dois {
+        background: purple;
+        }
+        .bold {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="cabecalho-um" class="fundo-vermelho borda-esquerda">Um texto qualquer.</h1>
+    <h1 id="cabecalho-dois" class="fundo-vermelho">Outro texto <b class="bold">qualquer.</b></h1>
+    <p>Um parágrafo <b class="bold"><b>qualquer</b></b>.</p>
+    <p>Outro parágrafo <b class="bold"><b>qualquer</b></b>.</p>
+    <p>Mais um parágrafo <b class="bold"><b>qualquer</b></b>.</p>
+</body>
+</html>
