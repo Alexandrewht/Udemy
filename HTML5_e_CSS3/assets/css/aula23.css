@@ -1,0 +1,31 @@
+/* display inline não pega as propriedades do bloco 
+   display block já vem como padão*/
+
+
+/* html, body {
+    height: 100%;
+} */
+
+/* box sizing content-box quer dizer que border, padding e margin
+   vão ser somadas ao tamanho do conteúdo. Ou seja ele cresce para fora.
+    Com o padding-box o padding vai ser acrescentado para dentro.
+    Com o border-box o border e padding  vai ser acrescentado para dentro.
+    A margin sempre vai ser para fora, serve para empurrar o conteúdo.
+   */
+.texto {
+    box-sizing: border-box; 
+    display: block;
+    background: red;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    min-width: 0%;
+    min-height: 100px;
+    overflow: auto;
+    margin: 0 auto 50px auto;
+    padding: 10px 5px;
+    border: 5px dotted black;
+    border-style: solid;
+    border-color: lightcoral
+}

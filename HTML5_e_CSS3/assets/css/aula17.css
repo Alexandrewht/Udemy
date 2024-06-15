@@ -1,0 +1,50 @@
+/* 
+.heading {
+    transition: all 300ms ease-in-out;
+}
+.heading:hover {
+    background: red;
+}
+a {
+    color: darkorange;
+}
+a:link {
+    color: deeppink;
+}
+a:visited {
+    color: firebrick;
+}
+a:hover {
+    background: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+a:active {
+    background: rgb(103, 155, 93);
+    color: white;
+    text-decoration: none;
+}
+input:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black
+}
+
+input:enabled {
+    background: lightsteelblue;
+} */
+
+input:checked + p {
+    background: red;
+    font: bold 24px Arial;
+}
+
+/* é possivel selecionar apenas o primeiro elemento de uma lista 
+    ou o ultimo*/
+.pai .lista li:last-child {
+    background: red;
+}
+
+input:required{
+    background: slateblue;
+}

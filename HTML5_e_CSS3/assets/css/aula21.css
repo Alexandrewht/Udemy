@@ -1,0 +1,32 @@
+/* especificidade são as seguintes regras
+Style,    ID,     Classes, Atributos e Pseudo-Classes,        Elementos e Pseudo-Elementos
+1          1              0                                              0
+0          1              0                                              0
+0          0              1                                              0
+0          1              1                                              0
+
+!important pode ser usado em qualquer lugar no CSS 
+para sobrescrever a regra de prioridade padrão
+forçando a regra de estilo a ser aplicada
+
+especificidade = 0 (padrão)
+empate = 1 (o ultimo será aplicado)
+style = 2 (no html irá sobrescrever a especificidade)
+important = 3 (força a regra de estilo a ser aplicada)
+*/
+
+body#b.bclass p#p.p {
+    background: purple;
+}
+#p.p {
+    background: yellow;
+}
+p {
+    background: red !important;
+}
+/* p#p.p {
+    background: green;
+}
+#b #p.p {
+    background: blue;
+} */

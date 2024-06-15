@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font: sans-serif;
+    font-size: 25px;
+}
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); */
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    /* é possível adicionar uma variável(apelido) aos itens do grid */
+    grid-template-columns: [um] 1fr 
+        [dois] 1fr 
+        [tres] 1fr
+        [quatro];
+    grid-template-rows: [um] 1fr 
+        [dois] 1fr 
+        [tres] 1fr
+        [quatro];
+    /* grid-template-rows: repeat(2, 1fr 2fr); */
+    gap: 30px;
+}
+.grid div {
+    background: tomato;
+    min-height: 100px;
+}
+
+.grid div:nth-child(5){
+    background: darkred;
+    /* grid-column-start: um;
+    grid-column-end: quatro; */
+    grid-column: span 2 / span 2; 
+    /* grid-row: um / quatro; usando a variável */
+    /* grid-row: span 1;
+    grid-column: span 2; */
+    /* grid-area: 1 / 1 / 4 / 4;  /* Linha inicial, coluna inicial, linha final, coluna termina  */
+    grid-area: um / um / quatro / quatro; 
+}
+
+/* @media (max-width: 768px) {
+    .grid div:nth-child(5){
+        grid-column: span 1;
+    }
+} */

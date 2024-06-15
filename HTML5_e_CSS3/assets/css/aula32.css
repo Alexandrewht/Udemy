@@ -1,0 +1,58 @@
+/* https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    /* align-content: center; */
+    background: yellow;
+    height: 800px;
+}
+.flex-item {
+    /* flex-grow: 1; (faz com que o elemento seja distribuido, 0 desabilita) */
+    /* flex-shrink: 1;  (faz com que o elemento seja redimensionado, 0 desabilita) */
+    /* flex-basis: 320px; (tamanho inicial do elemento) */
+    /* flex: 1 1 320px; ( grow shrink basis) */
+    /* margin-bottom: 2%; */
+    /* height: 200px; */
+    width: 100%;
+    color: #fff;
+    background: red;
+}
+
+/* Colocando os itens na ordem desejada
+.flex-item:nth-child(1){
+    order: -3;
+}
+.flex-item:nth-child(2){
+    order: -4;
+}
+.flex-item:nth-child(3){
+    order: -1;
+}
+.flex-item:nth-child(4){
+    order: -2;
+}
+.flex-item:nth-child(3){
+    align-self: flex-end;
+}
+.flex-item:nth-child(4){
+    align-self: center;
+}
+.flex-item:nth-child(2){
+    align-self: stretch;
+} 
+.flex-item:nth-child(3) {
+    font-size: 40px;
+}  
+.flex-item:nth-child(2) {
+    flex: 1 1 320px;
+    background: purple;
+} */

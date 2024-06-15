@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* .color-red {
+    color: red;
+}
+p {
+    color: purple;
+}
+body div section p,
+body div section {
+    color: blue;
+}
+body div.main-content h2.heading{
+    font-style: italic;
+    color: green; 
+}*/
+div{
+    color: initial;
+    margin-left: 20px;
+}
+/* herança simples */
+.pai > .filha {
+    color: red;
+}
+.pai > .filha > span > .filha {
+    color: green;
+}

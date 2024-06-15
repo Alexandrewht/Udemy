@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: violet;
+}
+.grid {
+    padding: 15px;
+}
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.grid .col {
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    /* hsl (hue, saturation, lightness) significa  matiz, saturação e brilho
+    o hsla adiciona a opacidade no final
+
+    background: hsla (0, 100%, 50%, 0.2); */
+    background: darkmagenta;
+    color: #fff;
+    
+}
+/* ABCDEF123456789, Obs. para cada cor RGB tem 6 digitos, R G B Cada um usa 2 digitos  
+    quando tem valores repetidos, pode se usar 1 caractere para cada valor ficando assim #123
+    */

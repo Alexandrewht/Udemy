@@ -1,0 +1,34 @@
+/* https://www.w3schools.com/cssref/css_units.php */
+/* o root é a raiz da html */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.pai {
+    /* width: 100vw; */
+    width: 50rem; /* 50 = 500px */
+    height: 100vh;
+    background: yellow;
+    overflow: hidden;
+}
+.pai > div {
+    width: 50%;
+    height: 50rem;
+    background: blue;
+}
+p {
+    font-size: 2vmax; 
+}
+/* .color-one {
+    background: turquoise;
+}
+.color-two {
+    background: purple;
+}
+body a {
+    font-size: 2em;
+} */

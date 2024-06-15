@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid {
+    padding: 15px;
+}
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.grid .col {
+    width: 33.33%;
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+/*  https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_queries
+    https://www.w3schools.com/cssref/css3_pr_mediaquery.php  
+    
+    Dados acima usados da aula 24, modificando o grid para celular.*/
+
+@media all and (max-width: 568px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+@media all and (min-width: 569px) and (max-width: 768px) {
+    .grid .col {
+        width: 50%;
+    }
+}
+@media all and (min-width: 769px) and (max-width: 1200px) {
+    .grid .col {
+        width: 33.33%;
+    }
+}
+@media all and (min-width: 1201px){
+    .grid .col {
+        width: 25%;
+    }
+}
+

@@ -1,0 +1,15 @@
+/* odd - ímpar, even - par */
+ul li:nth-child(odd) {
+    background-color: rebeccapurple;
+}
+ul li:nth-child(even) {
+    background-color: darkturquoise;
+}
+/* de 3 em 3 */
+ul li:nth-child(3n) {
+    background-color: darkorange;
+}
+/* começando do 5 elemento, vai de 3 em 3 */
+ul li:nth-child(3n+5) {
+    background-color: darkred;
+}

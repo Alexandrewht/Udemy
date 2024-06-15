@@ -1,0 +1,10 @@
+#texto {
+    font-family: sans-serif;
+    color: red;
+    font-size: 50px;
+}
+
+p {
+    font-size: initial;
+    color: initial;
+}
