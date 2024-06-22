@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web (Landing Page)</title>
+    <!-- Para um site no ar, não é recomendado separar o css em arquivos -->
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/elements.css">
+    <link rel="stylesheet" href="assets/css/classes.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+FR+Moderne:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Fechar o menu" role="button" aria-pressed="true">
+    <label class="close-menu-label" for="close-menu" title="Fechar"></label>
+
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;">
+                <a href="#intro">Inicio sobre HTML</a>
+            </h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="#basehtml">Base HTML</a></li>
+                    <li><a href="#grid-one">CSS Parte 1</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#grid-two">CSS Parte 2</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="menu-spacing"></div>
+    <section id='intro' class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>A Linguagem HTML</h2>
+                    <p>O HTML (HyperText Markup Language) é a linguagem de marcação fundamental usada 
+                        para criar páginas da Web. É responsável por fornecer estrutura e conteúdo às 
+                        páginas que vemos online. O HTML usa tags para definir diferentes elementos de 
+                        uma página da Web, como cabeçalhos, parágrafos, imagens e links.</p>
+                    <p>A sintaxe do HTML é relativamente simples, permitindo que iniciantes aprendam 
+                        rapidamente a criar páginas da Web básicas. No entanto, também é poderosa o 
+                        suficiente para criar páginas da Web complexas e interativas. 
+                        O HTML é usado em conjunto com outras tecnologias, 
+                        como CSS (Cascading Style Sheets) e JavaScript, para controlar a 
+                        aparência e o comportamento das páginas da Web.</p>
+                    <p>Juntas, essas tecnologias permitem que os desenvolvedores da Web criem 
+                        experiências online envolventes e dinâmicas. O HTML é essencial para a 
+                        criação de páginas da Web e continua sendo uma das tecnologias mais 
+                        importantes na construção da Internet.</p>
+            </div>
+            <div class="intro-img">
+                <img class='img_html' src="assets/img/logo_html5.svg" alt="logo simples do html5">
+                <img class='img_css' src="assets/img/logo_css3.svg" alt="logo simples do css3">
+            </div>
+        </div>
+    </section>
+    <section id="basehtml" class="white-bg section">
+        <div class="main-content basehtml-content">
+            <h2>HTML: A Base da Web</h2>
+                <p>Estrutura de uma Página HTML<br>
+                    Uma página HTML é composta por uma série de elementos, cada um definido por uma 
+                    tag HTML específica. Os elementos HTML mais comuns incluem: <br>
+                    <span class="taghtml">head</span>: Contém informações sobre a página, como título e metadados.<br>
+                    <span class="taghtml">body</span>: Contém o conteúdo principal da página, como texto, imagens e vídeos.<br>
+                    <span class="taghtml">h1</span> - <span class="taghtml">h6</span>: Definem títulos e cabeçalhos de vários níveis.<br>
+                    <span class="taghtml">p</span>: Define um parágrafo de texto.<br>
+                    <span class="taghtml">a</span>: Define um link para outra página ou recurso.<br>
+                    <span class="taghtml">img</span>: Define uma imagem.<br>
+                    <span class="taghtml">ul</span> e <span class="taghtml">ol</span>: Definem listas não ordenadas e ordenadas, respectivamente.
+                </p>
+                <p>Esses elementos são organizados hierarquicamente, com elementos aninhados dentro de 
+                    outros elementos. A estrutura adequada do HTML é essencial para criar páginas da 
+                    Web válidas e acessíveis.
+                </p>
+        </div>
+    </section>
+    <section id='grid-one' class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">o css</h2>
+            <p class="grid-main-description">3 Motivos para usar o CSS.</p>
+            <div class="grid">
+                <article><h3>Fácil de Aprender</h3><p>O CSS é fácil de aprender e usar, mesmo para iniciantes. Com um pouco de conhecimento básico de CSS, você pode criar páginas da Web bonitas e profissionais.</p></article>
+                <article><h3>Linguagem Poderosa</h3><p>O CSS é uma linguagem poderosa que permite aos desenvolvedores da Web controlar todos os aspectos da aparência de uma página da Web, desde as fontes e cores até o layout e as animações.</p></article>
+                <article><h3>Essencial</h3><p>O CSS é essencial para criar páginas da Web responsivas que se adaptam automaticamente a diferentes tamanhos de tela, como desktops, laptops, tablets e smartphones.</p></article>
+            </div>
+        </div>
+    </section>
+    <section id='gallery' class="grid-one white-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Gallery</h2>
+            <p class="grid-main-description">Imagens aleatórias geradas por IA.</p>
+            <div class="grid-gallery">
+                <div class="gallery-img">
+                    <img src="assets/img/aurora_boreal.jpg" alt="random image from https://designer.microsoft.com/image-creator">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/ceu_estrelado.jpg" alt="random image from https://designer.microsoft.com/image-creator">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/circuito_eletronico.jpg" alt="random image from https://designer.microsoft.com/image-creator">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/estacoes_do_ano.jpg" alt="random image from https://designer.microsoft.com/image-creator">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/floresta.jpg" alt="random image from https://designer.microsoft.com/image-creator">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/fundo_praia.jpg" alt="random image from https://designer.microsoft.com/image-creator">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/natureza.jpg" alt="random image from https://designer.microsoft.com/image-creator">
+                </div>
+                <div class="gallery-img">
+                    <img src="assets/img/passaro.jpg" alt="random image from https://designer.microsoft.com/image-creator">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id='grid-two' class="grid-one main-bg section">
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">o css parte 2</h2>
+            <p class="grid-main-description">Mais 3 Motivos para usar o CSS.</p>
+            <div class="grid">
+                <article><h3>Criar Efeitos</h3><p>O CSS pode ser usado para criar efeitos visuais complexos, como sombras, gradientes e transições. Isso permite que os desenvolvedores da Web criem páginas da Web mais envolventes e interativas.</p></article>
+                <article><h3>Baseado em Padrões</h3><p>O CSS é uma linguagem baseada em padrões, o que significa que é suportada por todos os principais navegadores da Web, como Chrome, Firefox, Safari e Edge. Isso garante que suas páginas da Web tenham a mesma aparência em todos os dispositivos.</p></article>
+                <article><h3>Constante Evolução</h3><p>O CSS é uma linguagem em constante evolução, com novos recursos e funcionalidades sendo adicionados regularmente. Isso permite que os desenvolvedores da Web criem páginas da Web cada vez mais avançadas e inovadoras.</p></article>
+            </div>
+        </div>
+    </section>
+    <section id='products' class="white-bg section">
+        <div class="main-content">
+            <h2 class="section-title">Produtos</h2>
+            <p class="table-description">Uma descrição sobre os produtos listados abaixos poderia ser adicionada aqui</p>
+            <div class="responsive-table basehtml-content">
+                <table>
+                    <caption>Preços de alguns produtos</caption>
+                    <thead>
+                        <tr>
+                            <th>Produto 1</th>
+                            <th>Produto 2</th>
+                            <th>Produto 3</th>
+                            <th>Produto 4</th>
+                            <th>Produto 5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>R$ 149,90</td>
+                            <td>R$ 49,90</td>
+                            <td>R$ 249,99</td>
+                            <td>R$ 599,90</td>
+                            <td>R$ 199,99</td>
+                        </tr>
+                        <tr>
+                            <td>R$ 249,90</td>
+                            <td>R$ 74,90</td>
+                            <td>R$ 399,90</td>
+                            <td>R$ 799,99</td>
+                            <td>R$ 299,90</td>
+                        </tr>
+                        <tr>
+                            <td>R$ 299,90</td>
+                            <td>R$ 99,90</td>
+                            <td>R$ 699,99</td>
+                            <td>R$ 1499,99</td>
+                            <td>R$ 399,99</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5">&copy;2024 Sua "Empresa". Todos os direitos reservados.</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id='contact' class="intro main-bg section">
+        <div id='contact-intro' class="main-content intro-content-contact">
+            <div class="intro-contact-content">
+                <h2>Contact me</h2>
+                <p>Se você tem perguntas, sugestões ou precisa de mais informações, estou aqui para ajudar. 
+                    Entre em contato comigo e terei prazer em responder o mais rápido possível. 
+                    Quer se trate de uma colaboração, uma dúvida ou simplesmente um bate-papo, 
+                    estou à disposição para ouvir e colaborar. Não hesite em me enviar uma mensagem!</p>
+            </div>
+            <div class="intro-img">
+                <img class='img_whatsapp' src="assets/img/contact_whatsapp.svg" alt="imagem da logo do whatsapp tirada do site https://svgsilh.com/pt/">
+                <img class='img_email' src="assets/img/contact_email.svg" alt="imagem da logo de email tirada do site https://svgsilh.com/pt/">
+            </div>
+        </div>
+        <div class="contact-form main-content">
+            <fieldset class="form-grid">
+                <legend>Para entrar em contato, preencha os campos abaixo</legend>
+                <div class="form-group">
+                    <label for="first-name">Primeiro nome</label>
+                    <input type="text" class="first-name" id="first-name" placeholder="Digite o seu nome">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Sobrenome</label>
+                    <input type="text" class="last-name" id="last-name" placeholder="Digite o seu Sobrenome">
+                </div>                    
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="email" id="email" placeholder="Digite o seu E-Mail">
+                </div>                    
+                <div class="form-group full-width">
+                    <label for="message">Sua mensagem</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite sua Mensagem"></textarea>
+                </div>
+                    <div class="form-group full-width">
+                    <button type="submit">Enviar</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer white-bg">
+        <p>Feito com <span class="heart">❤</span> por <a rel="nofollow" target="_blank" href="https://github.com/Alexandrewht">Alexandre white de mello</a></p>
+    </footer>
+
+    <a class="back-to-top" href="#">&#10514;</a>
+</body>
+</html>

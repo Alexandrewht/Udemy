@@ -21,4 +21,4 @@
  https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 '''
 
-# Aula 308, parada para fazer a seção de HTML e CSS3
+# Aula 310, parada para fazer a seção de HTML e CSS3

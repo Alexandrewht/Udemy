@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 37 Emmet Abbreviation</title>
+</head>
+<body>
+    <!-- Tabela com o Emmet Abbreviation 
+     /* https://docs.emmet.io/cheat-sheet/ */-->
+
+    <!-- div.classe-um.classe-dois -->
+    <div class="classe-um classe-dois">E eu posso colocar o conteúdo</div>
+
+    <!-- com id div#id -> div#um-id-->
+    <div id="um-id"></div>
+
+    <!-- com id e classe e conteúdo -> div#meu-id.minha-classe.outra-classe{Aqui já posso passar o conteúdo} -->
+    <div id="meu-id" class="minha-classe outraclasse">Aqui já posso passar o conteúdo</div>
+
+    <!-- com id e classe, conteúdo 3 vezes -> div#meu-id.minha-classe.outra-classe{Aqui já posso passar o conteúdo} *3-->
+    <div id="meu-id" class="minha-classe minha-outra-classe">Um conteúdo qualquer</div>
+    <div id="meu-id" class="minha-classe minha-outra-classe">Um conteúdo qualquer</div>
+    <div id="meu-id" class="minha-classe minha-outra-classe">Um conteúdo qualquer</div>
+
+    <!-- com o cirão, será criado uma nova enumeração, funciona em qualquer etapa
+        div.#meu-id$*4 -->
+    <div id="meu-id1"></div>
+    <div id="meu-id2"></div>
+    <div id="meu-id3"></div>
+    <div id="meu-id4"></div>
+   
+    <!-- vamos criar uma lista, com ul sendo o pai e li com conteúdo enumerados
+        ul>li*3-->
+    <ul>
+        <li>Conteúdo 1</li>
+        <li>Conteúdo 2</li>
+        <li>Conteúdo 3</li>
+    </ul>
+
+    <!-- criando grupos 
+    ul>(li>a{Conteúdo $})*3-->
+    <ul>
+        <li><a href="">Conteúdo 1</a></li>
+        <li><a href="">Conteúdo 2</a></li>
+        <li><a href="">Conteúdo 3</a></li>
+    </ul>
+
+    <!-- para colocar o ref
+    ul>(li>a{Conteúdo $}[href="qualquer-ref-$"])*3-->
+    <ul>
+        <li><a href="Qualquer-ref-1">Conteúdo 1</a></li>
+        <li><a href="Qualquer-ref-2">Conteúdo 2</a></li>
+        <li><a href="Qualquer-ref-3">Conteúdo 3</a></li>
+    </ul>
+
+    <!-- para colocar um irmão é + 
+     div.minha-classe#home>h1+p{Com qualquer conteúdo <a href="">Clique aqui </a>para saber mais}-->
+    <div class="minha-classe" id="home">
+        <h1>Conteúdo Qualquer</h1>
+        <p>Com qualquer conteúdo <a href="">Clique aqui </a>para saber mais</p>
+    </div>
+
+    <!-- section.h1.div>(p>span)*3-->
+    <section>
+        <h1>Conteúdo Qualquer</h1>
+        <div>
+            <p><span>Ao dar tab</span></p>
+            <p><span>Eu vou cair</span></p>
+            <p><span>Nos conteúdos</span></p>
+        </div>
+    </section>
+
+    <!-- abreviação de estilo 
+     w100p = width: 100%
+     h100vh = height: 100vh
+     m10rem = margin: 10rem
+     p10p = padding: 10%
+     df = display:flex, dg = display:grid, db = display:block, etc..
+     bg #000 = background: #000, bgc = background-color, bgi = background-image, etc..
+     posa = position: absolute
+     t10rem = top: 10rem
+     l10rem = left: 10rem
+     z1 = z-index: 1
+     ff = font-family, fw = font-weight, fs = font-size, etc..
+     -->
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            margin: 10rem;
+            padding: 10%;
+            display: flex;
+            background: #000;
+            position: absolute;
+            top: 10rem;
+        }
+    </style>
+
+</body>
+</html>
