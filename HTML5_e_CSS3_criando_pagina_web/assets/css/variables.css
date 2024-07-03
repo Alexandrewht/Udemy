@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #0A1128;
+    --white-color: #fff;
+    --light-gray-color: #eee;
+    --secondary-color: crimson;
+    --contorno-color:
+    -1px -1px 0 #000,   /* Sombra acima à esquerda */
+     1px -1px 0 #000,   /* Sombra acima à direita */
+    -1px  1px 0 #000,   /* Sombra abaixo à esquerda */
+     1px  1px 0 #000;   /* Sombra abaixo à direita */
+    --gap: 3rem;
+    --shadow: -0.4rem 0.4rem 0.1rem rgba(0, 0, 0, 0.5);
+}
