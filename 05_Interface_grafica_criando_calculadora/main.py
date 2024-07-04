@@ -6,14 +6,13 @@ from PySide6.QtWidgets import QApplication
 from PySide6.QtGui import QIcon
 from variables import WINDOW_ICON_PATH
 from styles import setupTheme
-from buttons import Button, ButtonsGrid
+from buttons import ButtonsGrid
 
 if __name__ == '__main__':
     # Cria a aplicação
     app = QApplication(sys.argv)
     setupTheme(app)  # Aplica o tema do qdarkstyle
     window = MainWindow()
-
     window.setWindowTitle('Calculadora')
 
     # Define o ícone
