@@ -1,1 +1,2 @@
-Pasta usada para estudo, na Udemy com Tutor Otávio Miranda
+# Python 
+ Estudo de Python com o Tutor: Otavio Miranda
