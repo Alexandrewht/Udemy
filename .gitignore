@@ -137,3 +137,17 @@ cython_debug/
 # Test configuration
 test.env
 tests.env
+
+# Arquivos e diretórios a serem ignorados pelo Git
+Ambiente de Impressão/
+Ambiente de Rede/
+AppData/
+Configurações Locais/
+Cookies/
+Dados de Aplicativos/
+Documents/
+Menu Iniciar/
+Meus Documentos/
+Modelos/
+Recent/
+SendTo/
