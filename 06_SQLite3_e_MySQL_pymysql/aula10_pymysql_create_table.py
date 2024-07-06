@@ -10,9 +10,6 @@ connection = pymysql.connect(
     password=os.environ['MYSQL_PASSWORD'],
     database=os.environ['MYSQL_DATABASE']
 )
-
-print(os.environ['MYSQL_HOST'])
-
 with connection:
     with connection.cursor() as cursor:
         ...
