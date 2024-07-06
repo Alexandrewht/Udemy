@@ -1,9 +1,4 @@
-from dotenv import load_dotenv
-import os
-
-load_dotenv('config.env')
-
-db_username = os.getenv('DB_USERNAME')
-db_password = os.getenv('DB_PASSWORD')
-
-print(f"Username: {db_username}, Password: {db_password}")
+# PyMySQL - um cliente MySQL feito em Python Puro
+# Doc: https://pymysql.readthedocs.io/en/latest/
+# Pypy: https://pypi.org/project/pymysql/
+# GitHub: https://github.com/PyMySQL/PyMySQL
