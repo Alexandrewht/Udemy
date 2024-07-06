@@ -19,4 +19,4 @@ print(os.environ['MYSQL_HOST'])
 
 with connection:
     with connection.cursor() as cursor:
-        ...
+        print(cursor)
