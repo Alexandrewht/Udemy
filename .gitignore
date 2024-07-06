@@ -151,3 +151,6 @@ Meus Documentos/
 Modelos/
 Recent/
 SendTo/
+
+# Arquivo de configuração contendo credenciais sensíveis
+config.env
