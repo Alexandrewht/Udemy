@@ -93,7 +93,43 @@ with connection:
             ("Alexa", 9)
         )
         result = cursor.executemany(sql, data4)
-        print(sql)
-        print(data4)
-        print(result)
+        # print(sql)
+        # print(data4)
+        # print(result)
     connection.commit()
+
+    # Lendo dados com SELECT
+    with connection.cursor() as cursor:
+
+        # BETWEEN (entre os dois limites)
+        small_id = 0
+        bigger_id = 100
+        sql = (
+            f'SELECT * FROM {TABLE_NAME} '
+            'WHERE id BETWEEN %s AND %s'
+        )
+        cursor.execute(sql, (small_id, bigger_id))
+        # print(cursor.mogrify(sql, (small_id, bigger_id)))
+        data5 = cursor.fetchall()
+
+        # for row in data5:
+        #     print(row)
+
+    with connection.cursor() as cursor:
+
+        # DELETANDO:DELETANDO: CUIDADO AO DELETAR DADOS DE UMA TABELA SEM O WHERE
+        sql = (
+            f'DELETE FROM {TABLE_NAME} '
+            'WHERE id = %s '
+        )
+        # sql = (
+        #     f'UPDATE {TABLE_NAME} SET name = "MORGAN" '
+        # )
+
+        cursor.execute(sql, (2,))
+        connection.commit()
+
+        cursor.execute(f'SELECT * FROM {TABLE_NAME} ')
+
+        for row in cursor.fetchall():
+            print(row)
