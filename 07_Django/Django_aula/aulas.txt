@@ -1,0 +1,22 @@
+As aulas de Django serão anotadas aqui, para evitar
+ficar criando projetos.
+
+DOC DJANGO: https://docs.djangoproject.com/en/5.0/
+
+Aula 01- Criando o projeto
+django-admin startproject <nome>
+
+Aula 02- Primeira URL e function based view 
++ HttpRequest e HttpResponse 
++ Status Codes: https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
+
+Aula 03- Criando apps com manage.py startapp
+
+Aula 04- Aninhando URLs com path, include e urls.py
+dos apps do django
+
+Aula 05- Renderizando HTML, render, 
+templates, namespace, INSTALLED_APPS e TemplateDoesNotExist
+
+Aula 06- Configurando templates globais com DIRS + 
+extends para herança de templates

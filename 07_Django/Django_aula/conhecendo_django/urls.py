@@ -1,5 +1,5 @@
 """
-URL configuration for project project.
+URL configuration for conhecendo_django project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -15,25 +15,20 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from django.http import HttpResponse
+from django.urls import path, include
 
-# HTTP Request <--> HTTP Response
-# MVT (Model View Template)
-# MVC (Model View Controller)
-
-# MVT (MVC)
-def blog(request):
-    print('Posso fazer outras coisas')
-    print('E tenho que retornar algo.')
-    return HttpResponse('BLOG!')
-
-def home(request):
-    print('HOME')
-    return HttpResponse('HOME!')
+'''# http://127.0.0.1:8000/
+# http://127.0.0.1:8000
+# http://127.0.0.1:8000/blog
+# http://127.0.0.1:8000/blog/
+# http://127.0.0.1:8000/blog/articles/
+# http://127.0.0.1:8000/blog/articles/comments
+# http://127.0.0.1:8000/blog/articles/categories
+# http://127.0.0.1:8000/blog/articles/authors
+# http://127.0.0.1:8000/blog/articles/anything'''
 
 urlpatterns = [
+    path('',include('home.urls')),
+    path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls),
-    path('blog/', blog),
-    path('', home),
 ]
