@@ -19,4 +19,10 @@ Aula 05- Renderizando HTML, render,
 templates, namespace, INSTALLED_APPS e TemplateDoesNotExist
 
 Aula 06- Configurando templates globais com DIRS + 
-extends para herança de templates
+extends para herança de templates, Django HTML
+
+Aula 07- Arquivos parciais e include para separar trechos 
+dos templates (partials), Django HTML
+
+Aula 08- Arquivos estáticos (staticfiles), STATIC_URL, 
+STATICFILES_DIRS e load static
