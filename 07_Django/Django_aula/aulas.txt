@@ -26,3 +26,21 @@ dos templates (partials), Django HTML
 
 Aula 08- Arquivos estáticos (staticfiles), STATIC_URL, 
 STATICFILES_DIRS e load static
+
+Aula 09- Usando o context para enviar dados para dentro 
+dos templates do Django
+
+Aula 10- Trabalhando com URLs dinâmicas em urls.py 
+e nos templates HTML do Django
+
+Aula 11- Movendo todos os estilos de CSS 
+para global/css/style.css
+
+Aula 12- Criando o partial postblock.html e usando include
+json fake data https://jsonplaceholder.typicode.com
+
+Aula 13- Usando block para criar blocos de posts e home
+
+Aula 14- Entendendo o seu HTML final + adicionando CSS aos posts
+
+Aula 15- Criando os dados de posts (data.py) e usando o loop for no template Django
