@@ -1,12 +1,14 @@
+from blog.data import posts
 from django.shortcuts import render
-from .data import posts
+from typing import Any
+from django.http import HttpRequest, Http404
 
 def blog(request):
     print('blog')
-    
+
     context = {
-            'text': 'Olá Blog!',
-            'posts': posts
+        # 'text': 'Olá blog',
+        'posts': posts
     }
 
     return render(
@@ -15,10 +17,35 @@ def blog(request):
         context
     )
 
+def post(request: HttpRequest, post_id: int):
+    found_post: dict[str, Any] | None = None
+
+    for post in posts:
+        if post['id'] == post_id:
+            found_post = post
+            break
+
+    if found_post is None:
+        raise Exception(Http404)
+
+    context = {
+        # 'text': 'Olá blog',
+        'post': found_post,
+        'title': found_post['title'] + ' - ',
+    }
+
+    return render(
+        request,
+        'blog/post.html',
+        context
+    )
+
 def exemplo(request):
     print('exemplo')
+
     context = {
-            'text': 'Olá Exemplo!'
+        'text': 'Olá exemplo',
+        'title': 'Essa é uma página de exemplo - ',
     }
 
     return render(

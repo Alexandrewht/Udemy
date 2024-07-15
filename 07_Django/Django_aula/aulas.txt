@@ -44,3 +44,18 @@ Aula 13- Usando block para criar blocos de posts e home
 Aula 14- Entendendo o seu HTML final + adicionando CSS aos posts
 
 Aula 15- Criando os dados de posts (data.py) e usando o loop for no template Django
+
+Aula 16- Usando if, elif e else dentro do template HTML do Django
+
+Aula 17- Criando urls dinâmicas no Django URL Dispatcher, view e template
+
+Aula 18- Usando a mesma URL de forma estática e dinâmica
+
+Aula 19- Configurando um post único no template post.html com a nova view e CSS
+
+Aula 20- Exibindo o erro 404 (página não encontrada) com django.http.Http404 (Not Found)
+
+Aula 21- Estilizando o CSS da nav de menu
+
+Aula 22- Básico sobre os arquivos estáticos, DEBUG e ALLOWED_HOSTS (local e em produção)
+whitenoise https://whitenoise.readthedocs.io/en/latest/
