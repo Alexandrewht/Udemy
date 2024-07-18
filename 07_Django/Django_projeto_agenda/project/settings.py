@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-c6d2^%$50(*d3%a3o)9#h)9+kdb@!s%dt&!6=7c2kp0k*lhj)a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+#  CUIDADO, Não utilize isso em produção. [*]
 ALLOWED_HOSTS = ['*']
 
 
@@ -55,7 +56,9 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'base_templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -117,6 +120,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = (
+    BASE_DIR / 'base_static',
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
