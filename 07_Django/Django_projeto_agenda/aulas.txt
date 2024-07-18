@@ -1,0 +1,1 @@
+Aula 01- Pasta base de templates e arquivos estáticos (base_templates, base_static)
