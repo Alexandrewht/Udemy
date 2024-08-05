@@ -1,1 +1,13 @@
 Aula 01- Pasta base de templates e arquivos estáticos (base_templates, base_static)
+
+Aula 02- Criando e editando a senha de um super usuário Django
+    python manage.py makemigrations
+    python manage.py migrate
+
+    python manage.py createsuperuser
+    python manage.py changepassword USERNAME
+
+Aula 03- Sobre base de dados, tabelas e documentação do Django
+    documentação de models
+    https://docs.djangoproject.com/en/5.0/topics/db/models/
+    https://docs.djangoproject.com/en/5.0/ref/models/fields/#field-choices
