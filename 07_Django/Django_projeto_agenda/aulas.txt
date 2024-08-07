@@ -11,3 +11,9 @@ Aula 03- Sobre base de dados, tabelas e documentação do Django
     documentação de models
     https://docs.djangoproject.com/en/5.0/topics/db/models/
     https://docs.djangoproject.com/en/5.0/ref/models/fields/#field-choices
+
+Aula 04- Django Models - Criando seu primeiro model, makemigrations e migrate
+
+Aula 05- Registrando meu model na área administrativa do Django (admin.py e register)
+
+Aula 06- Customizando as opções admin.ModelAdmin (Área administrativa do Django)
